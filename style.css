@@ -14,10 +14,21 @@ h1 {
     top: 0px; left: 390px;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    overflow: auto;
+}
+
 .contacts p {
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
-    position: relative;
+    position: absolute;
     top: 150px; left: 460px;
 }
 
@@ -27,12 +38,12 @@ h1 {
     border:0px solid; 
     margin: 0ch; 
     background: #6D6C6C;
-    position: absolute;
+    position: fixed;
     top: 0px; left: 50px;
 }
 
 .horRect {
-    width: 100%; 
+    width: 100vw; 
     height: 350px;
     border:0px solid; 
     margin: 0ch; 
@@ -50,4 +61,57 @@ table {
     border: 0px;
     position: absolute;
     top: 260px; left: 390px;
+}
+
+@media screen and (min-width: 360px) and (max-width: 1080px) {
+    h1 {
+      font-size: 3.5vw;
+    }
+}
+
+@media screen and (orientation: landscape) and (min-width: 676px) and (max-width: 1080px) {
+    h1 {
+      font-size: 3vw;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 1080px) {
+    .contacts p
+    {
+      font-size: 2.5vw;
+    }
+}
+
+@media screen and (orientation: landscape) and (min-width: 676px) and (max-width: 1080px) {
+    .contacts p {
+      font-size: 2vw;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 1080px) {
+    .info table
+    {
+      font-size: 2.5vw;
+    }
+}
+
+@media screen and (orientation: landscape) and (min-width: 676px) and (max-width: 1080px) {
+    .info table {
+      font-size: 2vw;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 1080px) {
+    table tr td img
+    {
+        width: 30px; 
+        height: 29.5px;
+    }
+}
+
+@media screen and (orientation: landscape) and (min-width: 676px) and (max-width: 1080px) {
+    table tr td img {
+        width: 30px; 
+        height: 29.5px;
+    }
 }
