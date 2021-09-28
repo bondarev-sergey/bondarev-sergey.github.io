@@ -1,3 +1,53 @@
+.info table {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    margin: 0ch;
+    position: absolute;
+    top: 460px; left: 390px;
+}
+
 h1 {
-    color: black;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 28px;
+    margin: 0ch;
+    position: absolute;
+    top: 0px; left: 390px;
+}
+
+.contacts p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    position: relative;
+    top: 150px; left: 460px;
+}
+
+.vertRect {
+    width: 320px; 
+    height: 100%; 
+    border:0px solid; 
+    margin: 0ch; 
+    background: #6D6C6C;
+    position: absolute;
+    top: 0px; left: 50px;
+}
+
+.horRect {
+    width: 100%; 
+    height: 350px;
+    border:0px solid; 
+    margin: 0ch; 
+    background: #DCDCDC;
+    position: absolute;
+    top: 100px; left: 0px;
+}
+
+.Photo img {
+    position: absolute;
+    top: 100px; left: 50px;
+}
+
+table {
+    border: 0px;
+    position: absolute;
+    top: 260px; left: 390px;
 }
