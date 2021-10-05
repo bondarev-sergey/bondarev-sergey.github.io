@@ -25,11 +25,24 @@ body {
     overflow: auto;
 }
 
+.contacts {
+    position: absolute;
+    top: 150px; left: 390px;
+    display: flex;
+    flex-direction: column;
+}
+
 .contacts p {
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
-    position: absolute;
-    top: 150px; left: 460px;
+    margin-top: 10px;
+    margin-bottom: 0em;
+}
+
+.contacts p img {
+    margin-right: 1vw;
+    width: 50px;
+    height: 50px;
 }
 
 .vertRect {
@@ -55,63 +68,107 @@ body {
 .Photo img {
     position: absolute;
     top: 100px; left: 50px;
+    width: 320px;
+    height: 350px;
 }
 
-table {
-    border: 0px;
-    position: absolute;
-    top: 260px; left: 390px;
-}
-
-@media screen and (min-width: 360px) and (max-width: 1080px) {
-    h1 {
-      font-size: 3.5vw;
-    }
-}
-
-@media screen and (orientation: landscape) and (min-width: 676px) and (max-width: 1080px) {
+@media screen and (min-width: 360px) and (max-width: 600px) {
     h1 {
       font-size: 3vw;
     }
-}
-
-@media screen and (min-width: 360px) and (max-width: 1080px) {
+    .horRect {
+        width: 100%; 
+        height: 175px;
+        border:0px solid; 
+        margin: 0ch; 
+        background: #DCDCDC;
+        position: absolute;
+        top: 100px; left: 0px;
+    }
+    .vertRect {
+        width: 160px; 
+        height: 100%; 
+        border:0px solid; 
+        margin: 0ch; 
+        background: #6D6C6C;
+        position: fixed;
+        top: 0px; left: 50px;
+    }
+    .contacts {
+        position: absolute;
+        top: 190px; left: 390px;
+        display: flex;
+        flex-direction: column;
+    }
     .contacts p
     {
-      font-size: 2.5vw;
-    }
-}
-
-@media screen and (orientation: landscape) and (min-width: 676px) and (max-width: 1080px) {
-    .contacts p {
       font-size: 2vw;
+      margin-top: 1vh;
     }
-}
-
-@media screen and (min-width: 360px) and (max-width: 1080px) {
+    .contacts p img {
+        margin-right: 1.5vw;
+        width: 40px;
+        height: 40px;
+    }
     .info table
     {
-      font-size: 2.5vw;
-    }
-}
-
-@media screen and (orientation: landscape) and (min-width: 676px) and (max-width: 1080px) {
-    .info table {
       font-size: 2vw;
     }
-}
-
-@media screen and (min-width: 360px) and (max-width: 1080px) {
-    table tr td img
-    {
-        width: 30px; 
-        height: 29.5px;
+    .Photo img {
+        position: absolute;
+        top: 100px; left: 50px;
+        width: 160px;
+        height: 175px;
     }
 }
 
-@media screen and (orientation: landscape) and (min-width: 676px) and (max-width: 1080px) {
-    table tr td img {
-        width: 30px; 
-        height: 29.5px;
+@media screen and (min-width: 600px) and (max-width: 1080px) {
+    h1 {
+        left: 280px;
+        font-size: 2vw;
+    }
+    .horRect {
+        width: 100%; 
+        height: 230px;
+        border:0px solid; 
+        margin: 0ch; 
+        background: #DCDCDC;
+        position: absolute;
+        top: 100px; left: 0px;
+    }
+    .vertRect {
+        width: 210px;
+        height: 100%; 
+        border:0px solid; 
+        margin: 0ch; 
+        background: #6D6C6C;
+        position: fixed;
+        top: 0px; left: 50px;
+    }
+    .contacts {
+        position: absolute;
+        top: 80px; left: 280px;
+        display: flex;
+        flex-direction: column;
+    }
+    .contacts p {
+        font-size: 2vw;
+        margin-top: 1vw;
+    }
+    .contacts p img {
+        margin-right: 1.5vw;
+        width: 4vw;/*40px;*/
+        height: 4vw;/*40px;*/
+    }
+    .info table {
+        top: 340px;
+        left: 280px;
+        font-size: 14px;
+    }
+    .Photo img {
+        position: absolute;
+        top: 100px; left: 50px;
+        width: 210px;
+        height: 230px;
     }
 }
